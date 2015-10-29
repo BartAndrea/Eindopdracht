@@ -1,0 +1,279 @@
+/* Algemene instellingen*/
+*{
+    margin:0em;
+    padding:0em;
+    font-family: 'Open sans',sans-serif;
+}
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main article{
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width:100%;
+}
+header > section h1,header > section p{
+	display: block;
+	color: white;
+}
+
+/* Mediaquerrys elementen*/
+@media (min-width: 30em) {
+
+    main article{
+        width:100%;
+        background-color: white;
+    }
+    header > section > p {
+    	display: none;
+    }
+    article > header{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    max-width: 35em;
+    padding:1em;
+    margin-bottom: 1em;
+    border-radius: 0.6em;
+    margin:1em;
+    min-width: 5em;
+    }
+    main section{
+
+    max-width: 35em;
+    background-color:#ccc;
+    border-radius: 0.6em;
+    padding: 1em;
+    margin-bottom: 1em;
+    min-width: 5em;
+    }
+    .forum{
+    	margin-top: 2em;
+
+    }
+    nav ul li{
+	display: inline;
+	margin-right: 1em;
+	}
+}
+@media (min-width: 40em) {
+    main article{
+        width:100%;
+        background-color: white;
+    }
+    header > section > p {
+    	display: none;
+    }
+    article > header{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    max-width: 20em;
+    padding:1em;
+    margin-bottom: 1em;
+    border-radius: 0.6em;
+    margin:1em;
+    min-width: 3em;
+    }
+    main section{
+
+    max-width: 20em;
+    background-color:#ccc;
+    border-radius: 0.6em;
+    padding: 1em;
+    margin-bottom: 1em;
+    min-width: 3em;
+    }
+    .forum{
+    	margin-top: 2em;
+    	min-width: 35em;
+    }
+    nav ul li{
+	display: inline;
+	margin-right: 1em;
+	}
+}
+
+@media (min-width: 70em) {
+    main article{
+        width:100%;
+        background-image: url(../img/cmd_beeldbank_connected_01.jpg);
+    }
+    header > section > p {
+    	display: block;
+    	margin-left: 2em;
+    }
+    article > header{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    max-width: 20em;
+    padding:1em;
+    margin-bottom: 1em;
+    border-radius: 0.6em;
+    margin:1em;
+    min-width: 3em;
+    box-shadow: 0em 0em .7em #999;
+    }
+    main section{
+
+    max-width: 20em;
+    background-color:#ccc;
+    border-radius: 0.6em;
+    padding: 1em;
+    margin-bottom: 1em;
+    min-width: 3em;
+    box-shadow: 0em 0em .7em #999;
+    }
+    .forum{
+    	margin-top: 2em;
+    	min-width: 45em;
+    }
+    nav ul li{
+	display: inline;
+	margin-right: 3em;
+	}
+}
+/*header/navigatie elementen*/
+nav ul{
+    list-style-type: none;
+}
+header > section{
+	background-color: orange;
+}
+body > header img{
+	width:7em;
+	height: 2em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+body > header h1{
+	margin-right: 2em;
+}
+header > section{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+	align-items: center;
+}
+header > section:nth-child(2){
+	background-color: #333;
+	padding: .5em;
+}
+header > section > form {
+    	justify-self:flex-end;
+}
+
+/* section elementen*/
+section > ol{
+    margin-left: 1.2em;
+}
+
+article{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+section > article{
+
+max-width: 30em;
+background-color:#ccc;
+border-radius: 0.6em;
+padding: 1em;
+min-width: 5em;
+margin: 1em;
+margin-left: auto;
+margin-right: auto;
+}
+
+article section{
+    margin:1em;
+}
+/* main elementen*/
+main{
+}
+
+main p{
+    line-height: 1.4em;
+    letter-spacing: 0.05em;
+}
+/* forum elementen*/
+fieldset{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 1em;
+}
+
+label{
+	margin-bottom: .5em;
+}
+
+/* overige elementen*/
+video{
+	width: 95%;
+	margin-top: 2em;
+}
+body > section{
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+}
+body > section > section{
+	display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+aside {
+	max-width: 30em;
+}
+aside > section > section{
+	display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+article{
+	width: 20em;
+}
+body > footer{
+    background-color: #333;
+    color: white;
+    padding: 2em;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+section > h2{
+    text-align: center;
+}
+
+footer h2{
+    text-align: left;
+}
+
+p + p{
+margin-top: 1em;
+}
+
+a{
+    color:orange;
+    text-decoration: none;
+    transition: .5s;
+}
+nav a{
+	color:white;
+}
+a:hover{
+    color:blue;
+}
